@@ -3,11 +3,11 @@ before_action :set_posts , only: [:index]
 before_action :set_post , only: [:show]
 
 	def index
-		render json: @posts
+		render json: @posts, status: :ok, root: :posts
 	end
 
 	def show
-		render json: @post
+		render json: @post, status: :ok, root: :post
 	end
 
 	private
