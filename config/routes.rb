@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+	root 'posts#index'
   resources :posts
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+	
+  api_version(:module => "V3", :path => {:value => "v3"}) do
+    resources :posts, only: [:index, :show]
+  end
+
 end
