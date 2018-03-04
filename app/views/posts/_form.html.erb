@@ -21,6 +21,41 @@
     <%= form.text_field :content, id: :post_content %>
   </div>
 
+  <div class="field">
+    <%= form.label :active %>
+    <%= form.check_box :active, id: :post_active %>
+  </div>
+
+  <div class="field">
+    <%= form.label :slug %>
+    <%= form.text_field :slug, id: :post_slug %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seo_description %>
+    <%= form.text_field :seo_description, id: :post_seo_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seo_keywords %>
+    <%= form.text_field :seo_keywords, id: :post_seo_keywords %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tags %>
+    <%= form.text_field :tags, id: :post_tags %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lang %>
+    <%= form.text_field :lang, id: :post_lang %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activated_at %>
+    <%= form.text_field :activated_at, id: :post_activated_at %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
