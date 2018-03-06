@@ -61,6 +61,6 @@ class PostsController < ApplicationController
     end
 
     def post_params
-      params.require(:post).permit(:title, :content)
+      params.require(:post).permit(:title, :content, :active, :slug, :seo_description, :seo_keywords, :tags, :lang, :activated_at)
     end
 end
